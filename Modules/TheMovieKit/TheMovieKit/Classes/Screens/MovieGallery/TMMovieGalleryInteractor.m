@@ -1,13 +1,13 @@
 //
-//  TMMovieInteractor.m
+//  TMMovieGalleryInteractor.m
 //  TheMovieKit
 //
 //  Created by Serhii Horinenko on 25.04.2024.
 //
 
-#import "TMMovieInteractor.h"
+#import "TMMovieGalleryInteractor.h"
 
-@interface TMMovieInteractor ()
+@interface TMMovieGalleryInteractor ()
 
 @property (nonatomic) NSString *baseImageUrl;
 @property (nonatomic) NSArray <NSString *>*imageSizes;
@@ -19,18 +19,10 @@
 @end
 
 
-@implementation TMMovieInteractor
+@implementation TMMovieGalleryInteractor
 
 - (NSString *)basePosterUrl {
     return [NSString stringWithFormat:@"%@%@", self.baseImageUrl, self.imageSizes.firstObject];
-}
-
-- (void)loadFirstPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
-    [self getTopRatedMovies:1 completion:completion];
-}
-
-- (void)loadNextPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
-    [self getTopRatedMovies:self.currPage + 1 completion:completion];
 }
 
 - (void)loadPage:(NSInteger)page completion:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
@@ -114,6 +106,21 @@
     }
 
     return  [resultMovies copy];
+}
+
+@end
+
+
+// MARK: - TMMovieGalleryInteractorProtocol
+
+@implementation TMMovieGalleryInteractor (TMMovieGalleryInteractorProtocol)
+
+- (void)loadFirstPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
+    [self getTopRatedMovies:1 completion:completion];
+}
+
+- (void)loadNextPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
+    [self getTopRatedMovies:self.currPage + 1 completion:completion];
 }
 
 @end

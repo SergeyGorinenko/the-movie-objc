@@ -11,8 +11,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic) TMMovieInteractor *interactor;
-
 @end
 
 
@@ -20,19 +18,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    self.interactor = TMMovieInteractor.new;
     __weak typeof(self) weakSelf = self;
-    [self.interactor loadFirstPage:^(NSArray<TMMovieModel *> * _Nonnull movies, NSError * _Nonnull error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (error) {
-                [weakSelf presentError:error];
-            } else {
-                [movies enumerateObjectsUsingBlock:^(TMMovieModel * _Nonnull movie, NSUInteger idx, BOOL * _Nonnull stop) {
-                    NSLog(@"ViewController: movie: \"%@\": %@", movie.title, movie.posterPath);
-                }];
-            }
-        });
+    UIViewController *controller = [TMMovieGalleryModule build:^(id  _Nonnull result, NSError * _Nonnull error) {
+        if (error) {
+            [weakSelf presentError:error];
+        } else {
+            NSLog(@"viewDidAppear: %@", result);
+        }
+    }];
+    [controller setModalPresentationStyle:UIModalPresentationFullScreen];
+    
+    [self presentViewController:controller animated:YES completion:^{
+        NSLog(@"viewDidAppear: presentViewController:animated:completion:");
     }];
 }
 

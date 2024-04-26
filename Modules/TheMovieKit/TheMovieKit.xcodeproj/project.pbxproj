@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		152E0A5C2BDB02760052C6EB /* TMMovieInteractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A5A2BDB02760052C6EB /* TMMovieInteractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		152E0A5D2BDB02760052C6EB /* TMMovieInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A5B2BDB02760052C6EB /* TMMovieInteractor.m */; };
+		152E0A5C2BDB02760052C6EB /* TMMovieGalleryInteractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A5A2BDB02760052C6EB /* TMMovieGalleryInteractor.h */; };
+		152E0A5D2BDB02760052C6EB /* TMMovieGalleryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A5B2BDB02760052C6EB /* TMMovieGalleryInteractor.m */; };
 		152E0A602BDB045C0052C6EB /* TheMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152E0A5F2BDB045C0052C6EB /* TheMovieAPI.framework */; };
 		152E0A642BDB04610052C6EB /* TheMovieCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152E0A632BDB04610052C6EB /* TheMovieCore.framework */; };
+		152E0A792BDB6C4F0052C6EB /* TMMovieGalleryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A772BDB6C4F0052C6EB /* TMMovieGalleryViewController.h */; };
+		152E0A7A2BDB6C4F0052C6EB /* TMMovieGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A782BDB6C4F0052C6EB /* TMMovieGalleryViewController.m */; };
+		152E0A7E2BDB6D2E0052C6EB /* TMMovieGalleryModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A7C2BDB6D2E0052C6EB /* TMMovieGalleryModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		152E0A7F2BDB6D2E0052C6EB /* TMMovieGalleryModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A7D2BDB6D2E0052C6EB /* TMMovieGalleryModule.m */; };
+		152E0A812BDB6D720052C6EB /* TMMovieGalleryProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A802BDB6D720052C6EB /* TMMovieGalleryProtocols.h */; };
+		152E0A842BDB6EF20052C6EB /* TMMovieGalleryRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A822BDB6EF20052C6EB /* TMMovieGalleryRouter.h */; };
+		152E0A852BDB6EF20052C6EB /* TMMovieGalleryRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A832BDB6EF20052C6EB /* TMMovieGalleryRouter.m */; };
+		152E0A882BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A862BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h */; };
+		152E0A892BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A872BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m */; };
+		152E0A8C2BDB6F270052C6EB /* TMMovieGalleryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */; };
+		152E0A8D2BDB6F270052C6EB /* TMMovieGalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */; };
+		152E0A912BDB71150052C6EB /* TheMovieKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152E0A8F2BDB71150052C6EB /* TheMovieKit.storyboard */; };
 		15CB1A2E2BDA4CB8007E6627 /* TheMovieKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A2D2BDA4CB8007E6627 /* TheMovieKit.docc */; };
 		15CB1A342BDA4CB8007E6627 /* TheMovieKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A292BDA4CB8007E6627 /* TheMovieKit.framework */; };
 		15CB1A392BDA4CB8007E6627 /* TheMovieKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A382BDA4CB8007E6627 /* TheMovieKitTests.m */; };
@@ -28,10 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		152E0A5A2BDB02760052C6EB /* TMMovieInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieInteractor.h; sourceTree = "<group>"; };
-		152E0A5B2BDB02760052C6EB /* TMMovieInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieInteractor.m; sourceTree = "<group>"; };
+		152E0A5A2BDB02760052C6EB /* TMMovieGalleryInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryInteractor.h; sourceTree = "<group>"; };
+		152E0A5B2BDB02760052C6EB /* TMMovieGalleryInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryInteractor.m; sourceTree = "<group>"; };
 		152E0A5F2BDB045C0052C6EB /* TheMovieAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheMovieAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		152E0A632BDB04610052C6EB /* TheMovieCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TheMovieCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		152E0A772BDB6C4F0052C6EB /* TMMovieGalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryViewController.h; sourceTree = "<group>"; };
+		152E0A782BDB6C4F0052C6EB /* TMMovieGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryViewController.m; sourceTree = "<group>"; };
+		152E0A7C2BDB6D2E0052C6EB /* TMMovieGalleryModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryModule.h; sourceTree = "<group>"; };
+		152E0A7D2BDB6D2E0052C6EB /* TMMovieGalleryModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryModule.m; sourceTree = "<group>"; };
+		152E0A802BDB6D720052C6EB /* TMMovieGalleryProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryProtocols.h; sourceTree = "<group>"; };
+		152E0A822BDB6EF20052C6EB /* TMMovieGalleryRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryRouter.h; sourceTree = "<group>"; };
+		152E0A832BDB6EF20052C6EB /* TMMovieGalleryRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryRouter.m; sourceTree = "<group>"; };
+		152E0A862BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryPresenter.h; sourceTree = "<group>"; };
+		152E0A872BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryPresenter.m; sourceTree = "<group>"; };
+		152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryCell.h; sourceTree = "<group>"; };
+		152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryCell.m; sourceTree = "<group>"; };
+		152E0A902BDB71150052C6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TheMovieKit.storyboard; sourceTree = "<group>"; };
 		15CB1A292BDA4CB8007E6627 /* TheMovieKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheMovieKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CB1A2C2BDA4CB8007E6627 /* TheMovieKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMovieKit.h; sourceTree = "<group>"; };
 		15CB1A2D2BDA4CB8007E6627 /* TheMovieKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TheMovieKit.docc; sourceTree = "<group>"; };
@@ -62,15 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		152E0A592BDB024D0052C6EB /* Interactors */ = {
-			isa = PBXGroup;
-			children = (
-				152E0A5A2BDB02760052C6EB /* TMMovieInteractor.h */,
-				152E0A5B2BDB02760052C6EB /* TMMovieInteractor.m */,
-			);
-			path = Interactors;
-			sourceTree = "<group>";
-		};
 		152E0A5E2BDB045C0052C6EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +93,42 @@
 				152E0A5F2BDB045C0052C6EB /* TheMovieAPI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		152E0A752BDB6C020052C6EB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				152E0A762BDB6C230052C6EB /* MovieGallery */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		152E0A762BDB6C230052C6EB /* MovieGallery */ = {
+			isa = PBXGroup;
+			children = (
+				152E0A7C2BDB6D2E0052C6EB /* TMMovieGalleryModule.h */,
+				152E0A7D2BDB6D2E0052C6EB /* TMMovieGalleryModule.m */,
+				152E0A802BDB6D720052C6EB /* TMMovieGalleryProtocols.h */,
+				152E0A5A2BDB02760052C6EB /* TMMovieGalleryInteractor.h */,
+				152E0A5B2BDB02760052C6EB /* TMMovieGalleryInteractor.m */,
+				152E0A822BDB6EF20052C6EB /* TMMovieGalleryRouter.h */,
+				152E0A832BDB6EF20052C6EB /* TMMovieGalleryRouter.m */,
+				152E0A862BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h */,
+				152E0A872BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m */,
+				152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */,
+				152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */,
+				152E0A772BDB6C4F0052C6EB /* TMMovieGalleryViewController.h */,
+				152E0A782BDB6C4F0052C6EB /* TMMovieGalleryViewController.m */,
+			);
+			path = MovieGallery;
+			sourceTree = "<group>";
+		};
+		152E0A8E2BDB71150052C6EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				152E0A8F2BDB71150052C6EB /* TheMovieKit.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		15CB1A1F2BDA4CB8007E6627 = {
@@ -130,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				15CB1A2C2BDA4CB8007E6627 /* TheMovieKit.h */,
-				152E0A592BDB024D0052C6EB /* Interactors */,
+				152E0A752BDB6C020052C6EB /* Screens */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -138,6 +189,7 @@
 		15CB1A502BDA4D17007E6627 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				152E0A8E2BDB71150052C6EB /* Storyboards */,
 				15CB1A2D2BDA4CB8007E6627 /* TheMovieKit.docc */,
 			);
 			path = Resources;
@@ -150,8 +202,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152E0A812BDB6D720052C6EB /* TMMovieGalleryProtocols.h in Headers */,
 				15CB1A3A2BDA4CB8007E6627 /* TheMovieKit.h in Headers */,
-				152E0A5C2BDB02760052C6EB /* TMMovieInteractor.h in Headers */,
+				152E0A5C2BDB02760052C6EB /* TMMovieGalleryInteractor.h in Headers */,
+				152E0A8C2BDB6F270052C6EB /* TMMovieGalleryCell.h in Headers */,
+				152E0A882BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h in Headers */,
+				152E0A792BDB6C4F0052C6EB /* TMMovieGalleryViewController.h in Headers */,
+				152E0A842BDB6EF20052C6EB /* TMMovieGalleryRouter.h in Headers */,
+				152E0A7E2BDB6D2E0052C6EB /* TMMovieGalleryModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152E0A912BDB71150052C6EB /* TheMovieKit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152E0A5D2BDB02760052C6EB /* TMMovieInteractor.m in Sources */,
+				152E0A8D2BDB6F270052C6EB /* TMMovieGalleryCell.m in Sources */,
+				152E0A7F2BDB6D2E0052C6EB /* TMMovieGalleryModule.m in Sources */,
+				152E0A7A2BDB6C4F0052C6EB /* TMMovieGalleryViewController.m in Sources */,
+				152E0A5D2BDB02760052C6EB /* TMMovieGalleryInteractor.m in Sources */,
 				15CB1A2E2BDA4CB8007E6627 /* TheMovieKit.docc in Sources */,
+				152E0A852BDB6EF20052C6EB /* TMMovieGalleryRouter.m in Sources */,
+				152E0A892BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +338,17 @@
 			targetProxy = 15CB1A352BDA4CB8007E6627 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		152E0A8F2BDB71150052C6EB /* TheMovieKit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152E0A902BDB71150052C6EB /* Base */,
+			);
+			name = TheMovieKit.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15CB1A3B2BDA4CB8007E6627 /* Debug */ = {

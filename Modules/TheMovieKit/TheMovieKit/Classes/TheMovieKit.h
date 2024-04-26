@@ -15,5 +15,5 @@ FOUNDATION_EXPORT const unsigned char TheMovieKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TheMovieKit/PublicHeader.h>
 
-#import <TheMovieKit/TMMovieInteractor.h>
+#import <TheMovieKit/TMMovieGalleryModule.h>
 
