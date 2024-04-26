@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152E0A682BDB04740052C6EB /* TheMovieKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A492BDA4CB8007E6627 /* TheMovieKit.framework */; };
+		152E0A692BDB04740052C6EB /* TheMovieKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A492BDA4CB8007E6627 /* TheMovieKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		152E0A6E2BDB047B0052C6EB /* TheMovieCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A0E2BDA441C007E6627 /* TheMovieCore.framework */; };
+		152E0A6F2BDB047B0052C6EB /* TheMovieCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A0E2BDA441C007E6627 /* TheMovieCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		155705922BDA157D00879205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705912BDA157D00879205 /* AppDelegate.m */; };
 		155705952BDA157D00879205 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705942BDA157D00879205 /* SceneDelegate.m */; };
 		155705982BDA157D00879205 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705972BDA157D00879205 /* ViewController.m */; };
@@ -17,6 +21,8 @@
 		155705AD2BDA157F00879205 /* TheMovieObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705AC2BDA157F00879205 /* TheMovieObjCTests.m */; };
 		155705B72BDA157F00879205 /* TheMovieObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705B62BDA157F00879205 /* TheMovieObjCUITests.m */; };
 		155705B92BDA157F00879205 /* TheMovieObjCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 155705B82BDA157F00879205 /* TheMovieObjCUITestsLaunchTests.m */; };
+		15CB19C52BDA1F0E007E6627 /* TheMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB19B72BDA1874007E6627 /* TheMovieAPI.framework */; };
+		15CB19C62BDA1F0E007E6627 /* TheMovieAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB19B72BDA1874007E6627 /* TheMovieAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,65 @@
 			remoteGlobalIDString = 1557058C2BDA157D00879205;
 			remoteInfo = TheMovieObjC;
 		};
+		15CB19B62BDA1874007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB19972BDA1873007E6627;
+			remoteInfo = TheMovieAPI;
+		};
+		15CB19B82BDA1874007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB19A12BDA1873007E6627;
+			remoteInfo = TheMovieAPITests;
+		};
+		15CB1A0D2BDA441C007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB1A082BDA441B007E6627 /* TheMovieCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB19EE2BDA441B007E6627;
+			remoteInfo = TheMovieCore;
+		};
+		15CB1A0F2BDA441C007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB1A082BDA441B007E6627 /* TheMovieCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB19F82BDA441B007E6627;
+			remoteInfo = TheMovieCoreTests;
+		};
+		15CB1A482BDA4CB8007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB1A432BDA4CB8007E6627 /* TheMovieKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB1A292BDA4CB8007E6627;
+			remoteInfo = TheMovieKit;
+		};
+		15CB1A4A2BDA4CB8007E6627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15CB1A432BDA4CB8007E6627 /* TheMovieKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15CB1A332BDA4CB8007E6627;
+			remoteInfo = TheMovieKitTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15CB19C72BDA1F0E007E6627 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				152E0A6F2BDB047B0052C6EB /* TheMovieCore.framework in Embed Frameworks */,
+				152E0A692BDB04740052C6EB /* TheMovieKit.framework in Embed Frameworks */,
+				15CB19C62BDA1F0E007E6627 /* TheMovieAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1557058D2BDA157D00879205 /* TheMovieObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMovieObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +118,12 @@
 		155705B22BDA157F00879205 /* TheMovieObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		155705B62BDA157F00879205 /* TheMovieObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieObjCUITests.m; sourceTree = "<group>"; };
 		155705B82BDA157F00879205 /* TheMovieObjCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieObjCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheMovieAPI.xcodeproj; path = TheMovieAPI/TheMovieAPI.xcodeproj; sourceTree = "<group>"; };
+		15CB19CA2BDA30F5007E6627 /* Global.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
+		15CB19CB2BDA30F5007E6627 /* Global-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Global-debug.xcconfig"; sourceTree = "<group>"; };
+		15CB19CC2BDA30F5007E6627 /* Global-release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Global-release.xcconfig"; sourceTree = "<group>"; };
+		15CB1A082BDA441B007E6627 /* TheMovieCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheMovieCore.xcodeproj; path = TheMovieCore/TheMovieCore.xcodeproj; sourceTree = "<group>"; };
+		15CB1A432BDA4CB8007E6627 /* TheMovieKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheMovieKit.xcodeproj; path = TheMovieKit/TheMovieKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152E0A6E2BDB047B0052C6EB /* TheMovieCore.framework in Frameworks */,
+				152E0A682BDB04740052C6EB /* TheMovieKit.framework in Frameworks */,
+				15CB19C52BDA1F0E007E6627 /* TheMovieAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +157,13 @@
 		155705842BDA157D00879205 = {
 			isa = PBXGroup;
 			children = (
+				15CB19C92BDA30F5007E6627 /* Configuration */,
 				1557058F2BDA157D00879205 /* TheMovieObjC */,
+				15CB19842BDA17EF007E6627 /* Modules */,
 				155705AB2BDA157F00879205 /* TheMovieObjCTests */,
 				155705B52BDA157F00879205 /* TheMovieObjCUITests */,
 				1557058E2BDA157D00879205 /* Products */,
+				15CB19C42BDA1F0E007E6627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +180,9 @@
 		1557058F2BDA157D00879205 /* TheMovieObjC */ = {
 			isa = PBXGroup;
 			children = (
-				155705902BDA157D00879205 /* AppDelegate.h */,
-				155705912BDA157D00879205 /* AppDelegate.m */,
-				155705932BDA157D00879205 /* SceneDelegate.h */,
-				155705942BDA157D00879205 /* SceneDelegate.m */,
-				155705962BDA157D00879205 /* ViewController.h */,
-				155705972BDA157D00879205 /* ViewController.m */,
-				155705992BDA157D00879205 /* Main.storyboard */,
-				1557059C2BDA157E00879205 /* Assets.xcassets */,
-				1557059E2BDA157E00879205 /* LaunchScreen.storyboard */,
+				15CB19512BDA160A007E6627 /* Classes */,
+				15CB19542BDA160A007E6627 /* Resources */,
 				155705A12BDA157E00879205 /* Info.plist */,
-				155705A22BDA157E00879205 /* main.m */,
 			);
 			path = TheMovieObjC;
 			sourceTree = "<group>";
@@ -136,6 +204,108 @@
 			path = TheMovieObjCUITests;
 			sourceTree = "<group>";
 		};
+		15CB19512BDA160A007E6627 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15CB19532BDA160A007E6627 /* Application */,
+				15CB19522BDA160A007E6627 /* Screens */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15CB19522BDA160A007E6627 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				155705962BDA157D00879205 /* ViewController.h */,
+				155705972BDA157D00879205 /* ViewController.m */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		15CB19532BDA160A007E6627 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				155705902BDA157D00879205 /* AppDelegate.h */,
+				155705912BDA157D00879205 /* AppDelegate.m */,
+				155705932BDA157D00879205 /* SceneDelegate.h */,
+				155705942BDA157D00879205 /* SceneDelegate.m */,
+				155705A22BDA157E00879205 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		15CB19542BDA160A007E6627 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1557059C2BDA157E00879205 /* Assets.xcassets */,
+				15CB19552BDA1629007E6627 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		15CB19552BDA1629007E6627 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				155705992BDA157D00879205 /* Main.storyboard */,
+				1557059E2BDA157E00879205 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		15CB19842BDA17EF007E6627 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				15CB1A432BDA4CB8007E6627 /* TheMovieKit.xcodeproj */,
+				15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */,
+				15CB1A082BDA441B007E6627 /* TheMovieCore.xcodeproj */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		15CB19B22BDA1873007E6627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CB19B72BDA1874007E6627 /* TheMovieAPI.framework */,
+				15CB19B92BDA1874007E6627 /* TheMovieAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15CB19C42BDA1F0E007E6627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15CB19C92BDA30F5007E6627 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				15CB19CC2BDA30F5007E6627 /* Global-release.xcconfig */,
+				15CB19CB2BDA30F5007E6627 /* Global-debug.xcconfig */,
+				15CB19CA2BDA30F5007E6627 /* Global.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		15CB1A092BDA441B007E6627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CB1A0E2BDA441C007E6627 /* TheMovieCore.framework */,
+				15CB1A102BDA441C007E6627 /* TheMovieCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15CB1A442BDA4CB8007E6627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CB1A492BDA4CB8007E6627 /* TheMovieKit.framework */,
+				15CB1A4B2BDA4CB8007E6627 /* TheMovieKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +316,7 @@
 				155705892BDA157D00879205 /* Sources */,
 				1557058A2BDA157D00879205 /* Frameworks */,
 				1557058B2BDA157D00879205 /* Resources */,
+				15CB19C72BDA1F0E007E6627 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +396,20 @@
 			mainGroup = 155705842BDA157D00879205;
 			productRefGroup = 1557058E2BDA157D00879205 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 15CB19B22BDA1873007E6627 /* Products */;
+					ProjectRef = 15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = 15CB1A092BDA441B007E6627 /* Products */;
+					ProjectRef = 15CB1A082BDA441B007E6627 /* TheMovieCore.xcodeproj */;
+				},
+				{
+					ProductGroup = 15CB1A442BDA4CB8007E6627 /* Products */;
+					ProjectRef = 15CB1A432BDA4CB8007E6627 /* TheMovieKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1557058C2BDA157D00879205 /* TheMovieObjC */,
@@ -233,6 +418,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		15CB19B72BDA1874007E6627 /* TheMovieAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TheMovieAPI.framework;
+			remoteRef = 15CB19B62BDA1874007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15CB19B92BDA1874007E6627 /* TheMovieAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TheMovieAPITests.xctest;
+			remoteRef = 15CB19B82BDA1874007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15CB1A0E2BDA441C007E6627 /* TheMovieCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TheMovieCore.framework;
+			remoteRef = 15CB1A0D2BDA441C007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15CB1A102BDA441C007E6627 /* TheMovieCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TheMovieCoreTests.xctest;
+			remoteRef = 15CB1A0F2BDA441C007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15CB1A492BDA4CB8007E6627 /* TheMovieKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TheMovieKit.framework;
+			remoteRef = 15CB1A482BDA4CB8007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		15CB1A4B2BDA4CB8007E6627 /* TheMovieKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TheMovieKitTests.xctest;
+			remoteRef = 15CB1A4A2BDA4CB8007E6627 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1557058B2BDA157D00879205 /* Resources */ = {
@@ -327,6 +557,7 @@
 /* Begin XCBuildConfiguration section */
 		155705BA2BDA157F00879205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15CB19CB2BDA30F5007E6627 /* Global-debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -388,6 +619,7 @@
 		};
 		155705BB2BDA157F00879205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15CB19CC2BDA30F5007E6627 /* Global-release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -443,6 +675,7 @@
 		};
 		155705BD2BDA157F00879205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15CB19CB2BDA30F5007E6627 /* Global-debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,6 +703,7 @@
 		};
 		155705BE2BDA157F00879205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15CB19CC2BDA30F5007E6627 /* Global-release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

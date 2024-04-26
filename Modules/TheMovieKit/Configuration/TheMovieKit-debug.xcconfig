@@ -1,0 +1,12 @@
+//
+//  Global.xcconfig
+//  RNScanner
+//
+//  Created by SergeyGorinenko on 05.11.2020.
+//  Copyright © 2020 Rokittech. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../Configuration/Global-debug.xcconfig"

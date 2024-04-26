@@ -1,0 +1,14 @@
+//
+//  Global.xcconfig
+//  TheMovieSwift
+//
+//  Created by Serhii Horinenko on 10.04.2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Global.xcconfig"
+
+DEBUG = true
+SAMPLE_CODE_DISAMBIGUATOR = ${DEVELOPMENT_TEAM}

@@ -1,0 +1,17 @@
+//
+//  Global.xcconfig
+//  TheMovieSwift
+//
+//  Created by Serhii Horinenko on 10.04.2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+DEBUG = false
+
+API_BASE_URL = api.themoviedb.org
+API_ENDPOINT = '@"https:/$()/${API_BASE_URL}/3"'
+THEMOVIEDB_API_KEY = '@"d72a0441859cf501802e2ca4186b6368"'
+
+GCC_PREPROCESSOR_DEFINITIONS = API_ENDPOINT=${API_ENDPOINT} THEMOVIEDB_API_KEY=${THEMOVIEDB_API_KEY}
