@@ -22,12 +22,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.collectionView.collectionViewLayout = TMMovieGalleryLayout.layout;
+
+    [self setupTopRefreshControl];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [self.presenter configureView];
+}
+
+- (void)setupTopRefreshControl {
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    refreshControl.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+    [refreshControl addTarget:self action:@selector(pullTopToRefreshAction:) forControlEvents:UIControlEventValueChanged];
+    self.collectionView.refreshControl = refreshControl;
+}
+
+- (void)pullTopToRefreshAction:(UIRefreshControl *)sender
+{
+    [self.presenter beganTopRefreshing];
 }
 
 @end
@@ -78,6 +92,14 @@
 
 - (void)reloadData {
     [self.collectionView reloadData];
+}
+
+- (void)beginTopRefreshing {
+    [self.collectionView.refreshControl beginRefreshing];
+}
+
+- (void)endTopRefreshing {
+    [self.collectionView.refreshControl endRefreshing];
 }
 
 @end

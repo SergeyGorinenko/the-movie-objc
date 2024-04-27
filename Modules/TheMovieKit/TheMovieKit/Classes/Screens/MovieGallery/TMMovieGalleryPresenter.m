@@ -33,17 +33,12 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
     [self.view reloadData];
 }
 
-@end
-
-
-// MARK: - TMMovieGalleryViewDelegate
-
-@implementation TMMovieGalleryPresenter (TMMovieGalleryViewDelegate)
-
-- (void)configureView {
+- (void)loadFirstPage {
+    self.movies = nil;
     __weak typeof(self) weakSelf = self;
     [self.interactor loadFirstPage:^(NSArray * _Nonnull movies, NSError * _Nonnull error) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.view endTopRefreshing];
             if (error) {
                 [weakSelf.router presentError:error];
             } else {
@@ -52,6 +47,18 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
             }
         });
     }];
+}
+
+@end
+
+
+// MARK: - TMMovieGalleryViewDelegate
+
+@implementation TMMovieGalleryPresenter (TMMovieGalleryViewDelegate)
+
+- (void)configureView {
+    [self.view beginTopRefreshing];
+    [self loadFirstPage];
 }
 
 - (NSInteger)numberOfSections {
@@ -71,6 +78,10 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
         [cell setRating:[NSString stringWithFormat:@"%0.1f", movie.voteAverage]];
         [cell setRemotePath:movie.posterPath];
     }
+}
+
+- (void)beganTopRefreshing {
+    [self loadFirstPage];
 }
 
 @end

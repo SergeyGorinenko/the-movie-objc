@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol TMMovieGalleryViewProtocol
 
 - (void)reloadData;
+- (void)beginTopRefreshing;
+- (void)endTopRefreshing;
 
 @end
 
@@ -39,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)numberOfSections;
 - (NSInteger)numberOfItemsInSection:(NSInteger)section;
 - (void)configure:(UICollectionViewCell<TMMovieGalleryCellProtocol> *)cell indexPath:(nonnull NSIndexPath *)indexPath;
+- (void)beganTopRefreshing;
 
 @end
 
