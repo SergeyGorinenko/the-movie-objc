@@ -6,6 +6,7 @@
 //
 
 #import "TMMovieGalleryViewController.h"
+#import "TMMovieGalleryLayout.h"
 #import "TMMovieGalleryCell.h"
 
 @interface TMMovieGalleryViewController ()
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.collectionView.collectionViewLayout = TMMovieGalleryLayout.layout;
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -69,6 +69,7 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
         [cell setTitle:movie.title];
         [cell setRelease:[TMMovieGalleryPresenter.dateFormatter stringFromDate:movie.releaseDate]];
         [cell setRating:[NSString stringWithFormat:@"%0.1f", movie.voteAverage]];
+        [cell setRemotePath:movie.posterPath];
     }
 }
 

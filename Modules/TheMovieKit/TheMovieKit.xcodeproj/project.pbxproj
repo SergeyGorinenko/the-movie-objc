@@ -27,6 +27,9 @@
 		15CB1A342BDA4CB8007E6627 /* TheMovieKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A292BDA4CB8007E6627 /* TheMovieKit.framework */; };
 		15CB1A392BDA4CB8007E6627 /* TheMovieKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A382BDA4CB8007E6627 /* TheMovieKitTests.m */; };
 		15CB1A3A2BDA4CB8007E6627 /* TheMovieKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB1A2C2BDA4CB8007E6627 /* TheMovieKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15E18FB12BDC800800C60B61 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E18FB02BDC800800C60B61 /* NetworkKit.framework */; };
+		15E399F92BDC163B006D53DD /* TMMovieGalleryLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E399F72BDC163B006D53DD /* TMMovieGalleryLayout.h */; };
+		15E399FA2BDC163B006D53DD /* TMMovieGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E399F82BDC163B006D53DD /* TMMovieGalleryLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		15CB1A382BDA4CB8007E6627 /* TheMovieKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieKitTests.m; sourceTree = "<group>"; };
 		15CB1A4D2BDA4CDA007E6627 /* TheMovieKit-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieKit-debug.xcconfig"; sourceTree = "<group>"; };
 		15CB1A4E2BDA4CDA007E6627 /* TheMovieKit-release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieKit-release.xcconfig"; sourceTree = "<group>"; };
+		15E18FB02BDC800800C60B61 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E399F72BDC163B006D53DD /* TMMovieGalleryLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryLayout.h; sourceTree = "<group>"; };
+		15E399F82BDC163B006D53DD /* TMMovieGalleryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			files = (
 				152E0A642BDB04610052C6EB /* TheMovieCore.framework in Frameworks */,
 				152E0A602BDB045C0052C6EB /* TheMovieAPI.framework in Frameworks */,
+				15E18FB12BDC800800C60B61 /* NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +96,7 @@
 		152E0A5E2BDB045C0052C6EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15E18FB02BDC800800C60B61 /* NetworkKit.framework */,
 				152E0A632BDB04610052C6EB /* TheMovieCore.framework */,
 				152E0A5F2BDB045C0052C6EB /* TheMovieAPI.framework */,
 			);
@@ -117,6 +125,8 @@
 				152E0A872BDB6EFB0052C6EB /* TMMovieGalleryPresenter.m */,
 				152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */,
 				152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */,
+				15E399F72BDC163B006D53DD /* TMMovieGalleryLayout.h */,
+				15E399F82BDC163B006D53DD /* TMMovieGalleryLayout.m */,
 				152E0A772BDB6C4F0052C6EB /* TMMovieGalleryViewController.h */,
 				152E0A782BDB6C4F0052C6EB /* TMMovieGalleryViewController.m */,
 			);
@@ -207,6 +217,7 @@
 				152E0A5C2BDB02760052C6EB /* TMMovieGalleryInteractor.h in Headers */,
 				152E0A8C2BDB6F270052C6EB /* TMMovieGalleryCell.h in Headers */,
 				152E0A882BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h in Headers */,
+				15E399F92BDC163B006D53DD /* TMMovieGalleryLayout.h in Headers */,
 				152E0A792BDB6C4F0052C6EB /* TMMovieGalleryViewController.h in Headers */,
 				152E0A842BDB6EF20052C6EB /* TMMovieGalleryRouter.h in Headers */,
 				152E0A7E2BDB6D2E0052C6EB /* TMMovieGalleryModule.h in Headers */,
@@ -311,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E399FA2BDC163B006D53DD /* TMMovieGalleryLayout.m in Sources */,
 				152E0A8D2BDB6F270052C6EB /* TMMovieGalleryCell.m in Sources */,
 				152E0A7F2BDB6D2E0052C6EB /* TMMovieGalleryModule.m in Sources */,
 				152E0A7A2BDB6C4F0052C6EB /* TMMovieGalleryViewController.m in Sources */,

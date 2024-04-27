@@ -7,48 +7,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BBE4E241-EB1A-4649-A2EA-CE3069E5FF88"
+            uuid = "B7A9EA17-A1DE-4A35-AAF2-02C611D34B4A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMGetTopRatedMoviesAPI.m"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadImageAPI.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-download:toURL:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF5B86C8-95B3-4A6F-B2E2-1B0E26308A9C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadImageAPI.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "-getTopRatedMovies:completion:"
+            landmarkName = "-download:toURL:completion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F188FE5B-D39B-46B8-B406-017CABC172D3"
+            uuid = "4F3F5F17-1247-41D9-BE41-3CB6101CCCCE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMGetTopRatedMoviesAPI.m"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadImageAPI.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-getTopRatedMovies:completion:"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-download:toURL:completion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D7C380AA-ABB4-4754-A410-B8555C873C99"
+            uuid = "4C5E779A-5284-44AB-B2DD-7988E486CFF5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMGetTopRatedMoviesAPI.m"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadAPI.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-getTopRatedMovies:completion:"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-download:toURL:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B110E88-3280-4E47-9869-0F38CEF5099C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadAPI.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-download:toURL:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFADC0B9-C7F7-4EE5-9DF0-7D3650EFD879"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/TheMovieAPI/TheMovieAPI/Classes/APIs/TMDownloadAPI.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-download:toURL:completion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

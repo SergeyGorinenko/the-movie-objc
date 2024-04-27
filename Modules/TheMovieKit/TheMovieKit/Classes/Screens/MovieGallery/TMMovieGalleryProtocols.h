@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setTitle:(NSString *)title;
 - (void)setRelease:(NSString *)release;
 - (void)setRating:(NSString *)rating;
+- (void)setRemotePath:(NSString *)remotePath;
 
 @end
 

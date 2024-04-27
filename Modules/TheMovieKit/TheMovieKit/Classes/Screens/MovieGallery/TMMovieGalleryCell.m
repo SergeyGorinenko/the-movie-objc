@@ -6,6 +6,7 @@
 //
 
 #import "TMMovieGalleryCell.h"
+#import <NetworkKit/NetworkKit.h>
 
 @interface TMMovieGalleryCell ()
 
@@ -21,6 +22,11 @@
 
 + (NSString *)defaultIdentifier {
     return @"movieGalleryCellIdentifier";
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [self.imageView cancelDownloading];
 }
 
 - (IBAction)clickButtonAction:(id)sender {
@@ -41,6 +47,10 @@
 
 - (void)setRating:(NSString *)rating {
     self.ratingLabel.text = rating;
+}
+
+- (void)setRemotePath:(NSString *)remotePath {
+    [self.imageView setRemotePath:remotePath];
 }
 
 @end

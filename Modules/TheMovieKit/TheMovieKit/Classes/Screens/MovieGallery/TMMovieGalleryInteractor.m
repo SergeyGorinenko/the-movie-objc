@@ -22,7 +22,7 @@
 @implementation TMMovieGalleryInteractor
 
 - (NSString *)basePosterUrl {
-    return [NSString stringWithFormat:@"%@%@", self.baseImageUrl, self.imageSizes.firstObject];
+    return [NSString stringWithFormat:@"%@%@", self.baseImageUrl, self.imageSizes[self.imageSizes.count / 2]];
 }
 
 - (void)loadPage:(NSInteger)page completion:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion {
