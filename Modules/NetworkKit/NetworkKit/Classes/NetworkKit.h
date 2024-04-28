@@ -15,4 +15,5 @@ FOUNDATION_EXPORT const unsigned char NetworkKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NetworkKit/PublicHeader.h>
 
+#import <NetworkKit/NKRefreshControl.h>
 #import <NetworkKit/UIImageView+Downloading.h>

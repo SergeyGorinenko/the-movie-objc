@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A0D24B2BDDE5150032A792 /* NKRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A0D2492BDDE5150032A792 /* NKRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15A0D24C2BDDE5150032A792 /* NKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A0D24A2BDDE5150032A792 /* NKRefreshControl.m */; };
 		15E18F822BDC7C2B00C60B61 /* NetworkKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 15E18F812BDC7C2B00C60B61 /* NetworkKit.docc */; };
 		15E18F882BDC7C2B00C60B61 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E18F7D2BDC7C2B00C60B61 /* NetworkKit.framework */; };
 		15E18F8D2BDC7C2B00C60B61 /* NetworkKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E18F8C2BDC7C2B00C60B61 /* NetworkKitTests.m */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15A0D2492BDDE5150032A792 /* NKRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKRefreshControl.h; sourceTree = "<group>"; };
+		15A0D24A2BDDE5150032A792 /* NKRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKRefreshControl.m; sourceTree = "<group>"; };
 		15E18F7D2BDC7C2B00C60B61 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E18F802BDC7C2B00C60B61 /* NetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkKit.h; sourceTree = "<group>"; };
 		15E18F812BDC7C2B00C60B61 /* NetworkKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkKit.docc; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15A0D2482BDDE4E30032A792 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				15A0D2492BDDE5150032A792 /* NKRefreshControl.h */,
+				15A0D24A2BDDE5150032A792 /* NKRefreshControl.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		15E18F732BDC7C2B00C60B61 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				15E18F802BDC7C2B00C60B61 /* NetworkKit.h */,
+				15A0D2482BDDE4E30032A792 /* Components */,
 				15E18FD42BDCB44C00C60B61 /* Extensions */,
 			);
 			path = Classes;
@@ -123,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E18FD72BDCB4B200C60B61 /* UIImageView+Downloading.h in Headers */,
+				15A0D24B2BDDE5150032A792 /* NKRefreshControl.h in Headers */,
 				15E18F8E2BDC7C2B00C60B61 /* NetworkKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +241,7 @@
 			files = (
 				15E18F822BDC7C2B00C60B61 /* NetworkKit.docc in Sources */,
 				15E18FD82BDCB4B200C60B61 /* UIImageView+Downloading.m in Sources */,
+				15A0D24C2BDDE5150032A792 /* NKRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,6 +49,21 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
     }];
 }
 
+- (void)loadNextPage {
+    __weak typeof(self) weakSelf = self;
+    [self.interactor loadNextPage:^(NSArray * _Nonnull movies, NSError * _Nonnull error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.view endBottomRefreshing];
+            if (error) {
+                [weakSelf.router presentError:error];
+            } else {
+                weakSelf.movies = [weakSelf.movies arrayByAddingObjectsFromArray:movies];
+                [weakSelf reloadView];
+            }
+        });
+    }];
+}
+
 @end
 
 
@@ -82,6 +97,10 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
 
 - (void)beganTopRefreshing {
     [self loadFirstPage];
+}
+
+- (void)beganBottomRefreshing {
+    [self loadNextPage];
 }
 
 @end
