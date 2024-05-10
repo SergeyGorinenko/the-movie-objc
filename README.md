@@ -7,4 +7,5 @@ Implementation features it demonstrates:
 2. TMMovieGalleryModule implements the VIPER design pattern;
 3. TMMovieDataProvider protocol demonstrates Dependency Injection technique;
 4. TMMovieGalleryLayout is an example of a compositional layout;
-5. Project configuration using xcconfigs.
+5. Bottom refresh control NKRefreshControl for UICollectionView; 
+6. Project configuration using xcconfigs.
