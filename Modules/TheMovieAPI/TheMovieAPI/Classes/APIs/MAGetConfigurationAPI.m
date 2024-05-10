@@ -1,14 +1,14 @@
 //
-//  TMGetConfigurationAPI.m
+//  MAGetConfigurationAPI.m
 //  TheMovieAPI
 //
 //  Created by Serhii Horinenko on 24.04.2024.
 //
 
-#import "TMGetConfigurationAPI.h"
+#import "MAGetConfigurationAPI.h"
 #import "NSError+TheMovieAPI.h"
 
-@implementation TMGetConfigurationAPI
+@implementation MAGetConfigurationAPI
 
 - (NSURL *)apiURL {
     NSString *urlString = [NSString stringWithFormat:@"%@/configuration?api_key=%@", API_ENDPOINT, THEMOVIEDB_API_KEY];

@@ -1,14 +1,14 @@
 //
-//  TMGetTopRatedMoviesAPI.m
+//  MAGetTopRatedMoviesAPI.m
 //  TheMovieAPI
 //
 //  Created by Serhii Horinenko on 25.04.2024.
 //
 
-#import "TMGetTopRatedMoviesAPI.h"
+#import "MAGetTopRatedMoviesAPI.h"
 #import "NSError+TheMovieAPI.h"
 
-@implementation TMGetTopRatedMoviesAPI
+@implementation MAGetTopRatedMoviesAPI
 
 - (NSURL *)apiURL:(NSInteger)page {
     NSString *urlString = [NSString stringWithFormat:@"%@/movie/top_rated?api_key=%@&page=%@", API_ENDPOINT, THEMOVIEDB_API_KEY, @(page)];

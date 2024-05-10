@@ -23,6 +23,14 @@
 		152E0A8C2BDB6F270052C6EB /* TMMovieGalleryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */; };
 		152E0A8D2BDB6F270052C6EB /* TMMovieGalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */; };
 		152E0A912BDB71150052C6EB /* TheMovieKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152E0A8F2BDB71150052C6EB /* TheMovieKit.storyboard */; };
+		156A82412BEDA3C7002D6E4B /* TMMovieDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A82402BEDA3C7002D6E4B /* TMMovieDataProvider.h */; };
+		156A82442BEDA464002D6E4B /* MANetworkManager+TheMovieKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A82432BEDA464002D6E4B /* MANetworkManager+TheMovieKit.h */; };
+		156A82472BEDA92B002D6E4B /* TMMovieConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A82452BEDA92B002D6E4B /* TMMovieConfiguration.h */; };
+		156A82482BEDA92B002D6E4B /* TMMovieConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 156A82462BEDA92B002D6E4B /* TMMovieConfiguration.m */; };
+		156A824B2BEDAACE002D6E4B /* TMMoviePagination.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A82492BEDAACE002D6E4B /* TMMoviePagination.h */; };
+		156A824C2BEDAACE002D6E4B /* TMMoviePagination.m in Sources */ = {isa = PBXBuildFile; fileRef = 156A824A2BEDAACE002D6E4B /* TMMoviePagination.m */; };
+		156A824F2BEDAC9E002D6E4B /* TMMovieList.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A824D2BEDAC9E002D6E4B /* TMMovieList.h */; };
+		156A82502BEDAC9E002D6E4B /* TMMovieList.m in Sources */ = {isa = PBXBuildFile; fileRef = 156A824E2BEDAC9E002D6E4B /* TMMovieList.m */; };
 		15CB1A2E2BDA4CB8007E6627 /* TheMovieKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A2D2BDA4CB8007E6627 /* TheMovieKit.docc */; };
 		15CB1A342BDA4CB8007E6627 /* TheMovieKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB1A292BDA4CB8007E6627 /* TheMovieKit.framework */; };
 		15CB1A392BDA4CB8007E6627 /* TheMovieKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A382BDA4CB8007E6627 /* TheMovieKitTests.m */; };
@@ -59,6 +67,14 @@
 		152E0A8A2BDB6F270052C6EB /* TMMovieGalleryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieGalleryCell.h; sourceTree = "<group>"; };
 		152E0A8B2BDB6F270052C6EB /* TMMovieGalleryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieGalleryCell.m; sourceTree = "<group>"; };
 		152E0A902BDB71150052C6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TheMovieKit.storyboard; sourceTree = "<group>"; };
+		156A82402BEDA3C7002D6E4B /* TMMovieDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieDataProvider.h; sourceTree = "<group>"; };
+		156A82432BEDA464002D6E4B /* MANetworkManager+TheMovieKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MANetworkManager+TheMovieKit.h"; sourceTree = "<group>"; };
+		156A82452BEDA92B002D6E4B /* TMMovieConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieConfiguration.h; sourceTree = "<group>"; };
+		156A82462BEDA92B002D6E4B /* TMMovieConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieConfiguration.m; sourceTree = "<group>"; };
+		156A82492BEDAACE002D6E4B /* TMMoviePagination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMoviePagination.h; sourceTree = "<group>"; };
+		156A824A2BEDAACE002D6E4B /* TMMoviePagination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMoviePagination.m; sourceTree = "<group>"; };
+		156A824D2BEDAC9E002D6E4B /* TMMovieList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieList.h; sourceTree = "<group>"; };
+		156A824E2BEDAC9E002D6E4B /* TMMovieList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieList.m; sourceTree = "<group>"; };
 		15CB1A292BDA4CB8007E6627 /* TheMovieKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheMovieKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CB1A2C2BDA4CB8007E6627 /* TheMovieKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMovieKit.h; sourceTree = "<group>"; };
 		15CB1A2D2BDA4CB8007E6627 /* TheMovieKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TheMovieKit.docc; sourceTree = "<group>"; };
@@ -141,6 +157,35 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		156A82392BED9162002D6E4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				156A82452BEDA92B002D6E4B /* TMMovieConfiguration.h */,
+				156A82462BEDA92B002D6E4B /* TMMovieConfiguration.m */,
+				156A82492BEDAACE002D6E4B /* TMMoviePagination.h */,
+				156A824A2BEDAACE002D6E4B /* TMMoviePagination.m */,
+				156A824D2BEDAC9E002D6E4B /* TMMovieList.h */,
+				156A824E2BEDAC9E002D6E4B /* TMMovieList.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		156A823F2BEDA33B002D6E4B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				156A82402BEDA3C7002D6E4B /* TMMovieDataProvider.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		156A82422BEDA3DE002D6E4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				156A82432BEDA464002D6E4B /* MANetworkManager+TheMovieKit.h */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		15CB1A1F2BDA4CB8007E6627 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				15CB1A2C2BDA4CB8007E6627 /* TheMovieKit.h */,
+				156A82422BEDA3DE002D6E4B /* Extensions */,
+				156A82392BED9162002D6E4B /* Models */,
+				156A823F2BEDA33B002D6E4B /* Protocols */,
 				152E0A752BDB6C020052C6EB /* Screens */,
 			);
 			path = Classes;
@@ -213,14 +261,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				152E0A812BDB6D720052C6EB /* TMMovieGalleryProtocols.h in Headers */,
+				156A82412BEDA3C7002D6E4B /* TMMovieDataProvider.h in Headers */,
 				15CB1A3A2BDA4CB8007E6627 /* TheMovieKit.h in Headers */,
 				152E0A5C2BDB02760052C6EB /* TMMovieGalleryInteractor.h in Headers */,
 				152E0A8C2BDB6F270052C6EB /* TMMovieGalleryCell.h in Headers */,
 				152E0A882BDB6EFB0052C6EB /* TMMovieGalleryPresenter.h in Headers */,
 				15E399F92BDC163B006D53DD /* TMMovieGalleryLayout.h in Headers */,
 				152E0A792BDB6C4F0052C6EB /* TMMovieGalleryViewController.h in Headers */,
+				156A824F2BEDAC9E002D6E4B /* TMMovieList.h in Headers */,
 				152E0A842BDB6EF20052C6EB /* TMMovieGalleryRouter.h in Headers */,
+				156A824B2BEDAACE002D6E4B /* TMMoviePagination.h in Headers */,
+				156A82472BEDA92B002D6E4B /* TMMovieConfiguration.h in Headers */,
 				152E0A7E2BDB6D2E0052C6EB /* TMMovieGalleryModule.h in Headers */,
+				156A82442BEDA464002D6E4B /* MANetworkManager+TheMovieKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156A82502BEDAC9E002D6E4B /* TMMovieList.m in Sources */,
 				15E399FA2BDC163B006D53DD /* TMMovieGalleryLayout.m in Sources */,
+				156A82482BEDA92B002D6E4B /* TMMovieConfiguration.m in Sources */,
 				152E0A8D2BDB6F270052C6EB /* TMMovieGalleryCell.m in Sources */,
+				156A824C2BEDAACE002D6E4B /* TMMoviePagination.m in Sources */,
 				152E0A7F2BDB6D2E0052C6EB /* TMMovieGalleryModule.m in Sources */,
 				152E0A7A2BDB6C4F0052C6EB /* TMMovieGalleryViewController.m in Sources */,
 				152E0A5D2BDB02760052C6EB /* TMMovieGalleryInteractor.m in Sources */,

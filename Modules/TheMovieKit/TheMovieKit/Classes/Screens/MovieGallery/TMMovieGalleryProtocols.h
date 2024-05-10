@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MARK: - TMMovieGalleryCellProtocol
 
+/** Protocol that movie gallery cell must confirm to */
 @protocol TMMovieGalleryCellProtocol
 
 - (void)setTitle:(NSString *)title;
@@ -24,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MARK: - View Protocol
 
+/** Protocol that View component of VIPER module must confirm to */
 @protocol TMMovieGalleryViewProtocol
 
 - (void)reloadData;
@@ -37,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MARK: - View Delegate
 
+/** Protocol that Presenter component of VIPER module must confirm to, to handle events coming from the View */
 @protocol TMMovieGalleryViewDelegate
 
 - (void)configureView;
@@ -51,16 +54,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 // MARK: - Interactor Protocol
 
+/** Protocol that Interactor component of VIPER module must confirm to, to handle events coming from the Presenter */
 @protocol TMMovieGalleryInteractorProtocol
 
-- (void)loadFirstPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion;
-- (void)loadNextPage:(void (^)(NSArray <TMMovieModel *>*movies, NSError *error))completion;
+- (void)loadFirstPage:(void (^)(NSArray <MCMovieModel *>*movies, NSError *error))completion;
+- (void)loadNextPage:(void (^)(NSArray <MCMovieModel *>*movies, NSError *error))completion;
 
 @end
 
 
 // MARK: - Router Protocol
 
+/** Protocol that Router component of VIPER module must confirm to, to handle events coming from the Presenter */
 @protocol TMMovieGalleryRouterProtocol
 
 - (void)presentError:(NSError *)error;

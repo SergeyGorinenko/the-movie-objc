@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		152E0A732BDB18A70052C6EB /* NSError+TheMovieAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E0A712BDB18A70052C6EB /* NSError+TheMovieAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		152E0A742BDB18A70052C6EB /* NSError+TheMovieAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 152E0A722BDB18A70052C6EB /* NSError+TheMovieAPI.m */; };
+		156A823D2BED9E92002D6E4B /* MANetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 156A823B2BED9E92002D6E4B /* MANetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		156A823E2BED9E92002D6E4B /* MANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 156A823C2BED9E92002D6E4B /* MANetworkManager.m */; };
 		15CB199C2BDA1873007E6627 /* TheMovieAPI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 15CB199B2BDA1873007E6627 /* TheMovieAPI.docc */; };
 		15CB19A22BDA1873007E6627 /* TheMovieAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB19972BDA1873007E6627 /* TheMovieAPI.framework */; };
 		15CB19A72BDA1873007E6627 /* TheMovieAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19A62BDA1873007E6627 /* TheMovieAPITests.m */; };
 		15CB19A82BDA1873007E6627 /* TheMovieAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB199A2BDA1873007E6627 /* TheMovieAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15CB19D52BDA340A007E6627 /* TMGetConfigurationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB19D32BDA340A007E6627 /* TMGetConfigurationAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15CB19D62BDA340A007E6627 /* TMGetConfigurationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19D42BDA340A007E6627 /* TMGetConfigurationAPI.m */; };
-		15CB19DE2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB19DC2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15CB19DF2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19DD2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.m */; };
+		15CB19D52BDA340A007E6627 /* MAGetConfigurationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB19D32BDA340A007E6627 /* MAGetConfigurationAPI.h */; };
+		15CB19D62BDA340A007E6627 /* MAGetConfigurationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19D42BDA340A007E6627 /* MAGetConfigurationAPI.m */; };
+		15CB19DE2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB19DC2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.h */; };
+		15CB19DF2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19DD2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		152E0A712BDB18A70052C6EB /* NSError+TheMovieAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+TheMovieAPI.h"; sourceTree = "<group>"; };
 		152E0A722BDB18A70052C6EB /* NSError+TheMovieAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+TheMovieAPI.m"; sourceTree = "<group>"; };
+		156A823B2BED9E92002D6E4B /* MANetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MANetworkManager.h; sourceTree = "<group>"; };
+		156A823C2BED9E92002D6E4B /* MANetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MANetworkManager.m; sourceTree = "<group>"; };
 		15CB19972BDA1873007E6627 /* TheMovieAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheMovieAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CB199A2BDA1873007E6627 /* TheMovieAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMovieAPI.h; sourceTree = "<group>"; };
 		15CB199B2BDA1873007E6627 /* TheMovieAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TheMovieAPI.docc; sourceTree = "<group>"; };
@@ -39,10 +43,10 @@
 		15CB19A62BDA1873007E6627 /* TheMovieAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieAPITests.m; sourceTree = "<group>"; };
 		15CB19CE2BDA320E007E6627 /* TheMovieAPI-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieAPI-debug.xcconfig"; sourceTree = "<group>"; };
 		15CB19CF2BDA320E007E6627 /* TheMovieAPI-release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieAPI-release.xcconfig"; sourceTree = "<group>"; };
-		15CB19D32BDA340A007E6627 /* TMGetConfigurationAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMGetConfigurationAPI.h; sourceTree = "<group>"; };
-		15CB19D42BDA340A007E6627 /* TMGetConfigurationAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMGetConfigurationAPI.m; sourceTree = "<group>"; };
-		15CB19DC2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMGetTopRatedMoviesAPI.h; sourceTree = "<group>"; };
-		15CB19DD2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMGetTopRatedMoviesAPI.m; sourceTree = "<group>"; };
+		15CB19D32BDA340A007E6627 /* MAGetConfigurationAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGetConfigurationAPI.h; sourceTree = "<group>"; };
+		15CB19D42BDA340A007E6627 /* MAGetConfigurationAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGetConfigurationAPI.m; sourceTree = "<group>"; };
+		15CB19DC2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGetTopRatedMoviesAPI.h; sourceTree = "<group>"; };
+		15CB19DD2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGetTopRatedMoviesAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,15 @@
 				152E0A722BDB18A70052C6EB /* NSError+TheMovieAPI.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		156A823A2BED9E4A002D6E4B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				156A823B2BED9E92002D6E4B /* MANetworkManager.h */,
+				156A823C2BED9E92002D6E4B /* MANetworkManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		15CB198D2BDA1873007E6627 = {
@@ -113,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				15CB199A2BDA1873007E6627 /* TheMovieAPI.h */,
+				156A823A2BED9E4A002D6E4B /* Managers */,
 				15CB19C82BDA2F7C007E6627 /* APIs */,
 				152E0A702BDB186B0052C6EB /* Extensions */,
 			);
@@ -130,10 +144,10 @@
 		15CB19C82BDA2F7C007E6627 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				15CB19D32BDA340A007E6627 /* TMGetConfigurationAPI.h */,
-				15CB19D42BDA340A007E6627 /* TMGetConfigurationAPI.m */,
-				15CB19DC2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.h */,
-				15CB19DD2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.m */,
+				15CB19D32BDA340A007E6627 /* MAGetConfigurationAPI.h */,
+				15CB19D42BDA340A007E6627 /* MAGetConfigurationAPI.m */,
+				15CB19DC2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.h */,
+				15CB19DD2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.m */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -155,8 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				152E0A732BDB18A70052C6EB /* NSError+TheMovieAPI.h in Headers */,
-				15CB19D52BDA340A007E6627 /* TMGetConfigurationAPI.h in Headers */,
-				15CB19DE2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.h in Headers */,
+				15CB19D52BDA340A007E6627 /* MAGetConfigurationAPI.h in Headers */,
+				156A823D2BED9E92002D6E4B /* MANetworkManager.h in Headers */,
+				15CB19DE2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.h in Headers */,
 				15CB19A82BDA1873007E6627 /* TheMovieAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +275,9 @@
 			files = (
 				15CB199C2BDA1873007E6627 /* TheMovieAPI.docc in Sources */,
 				152E0A742BDB18A70052C6EB /* NSError+TheMovieAPI.m in Sources */,
-				15CB19D62BDA340A007E6627 /* TMGetConfigurationAPI.m in Sources */,
-				15CB19DF2BDA4193007E6627 /* TMGetTopRatedMoviesAPI.m in Sources */,
+				156A823E2BED9E92002D6E4B /* MANetworkManager.m in Sources */,
+				15CB19D62BDA340A007E6627 /* MAGetConfigurationAPI.m in Sources */,
+				15CB19DF2BDA4193007E6627 /* MAGetTopRatedMoviesAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

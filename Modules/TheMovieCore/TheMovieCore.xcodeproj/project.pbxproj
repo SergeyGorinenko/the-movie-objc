@@ -11,8 +11,8 @@
 		15CB19F92BDA441B007E6627 /* TheMovieCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CB19EE2BDA441B007E6627 /* TheMovieCore.framework */; };
 		15CB19FE2BDA441B007E6627 /* TheMovieCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB19FD2BDA441B007E6627 /* TheMovieCoreTests.m */; };
 		15CB19FF2BDA441B007E6627 /* TheMovieCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB19F12BDA441B007E6627 /* TheMovieCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15CB1A1D2BDA45F3007E6627 /* TMMovieModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB1A152BDA4456007E6627 /* TMMovieModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15CB1A1E2BDA45F8007E6627 /* TMMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A162BDA4456007E6627 /* TMMovieModel.m */; };
+		15CB1A1D2BDA45F3007E6627 /* MCMovieModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 15CB1A152BDA4456007E6627 /* MCMovieModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15CB1A1E2BDA45F8007E6627 /* MCMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB1A162BDA4456007E6627 /* MCMovieModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,8 @@
 		15CB19F22BDA441B007E6627 /* TheMovieCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TheMovieCore.docc; sourceTree = "<group>"; };
 		15CB19F82BDA441B007E6627 /* TheMovieCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CB19FD2BDA441B007E6627 /* TheMovieCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieCoreTests.m; sourceTree = "<group>"; };
-		15CB1A152BDA4456007E6627 /* TMMovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMMovieModel.h; sourceTree = "<group>"; };
-		15CB1A162BDA4456007E6627 /* TMMovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMMovieModel.m; sourceTree = "<group>"; };
+		15CB1A152BDA4456007E6627 /* MCMovieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCMovieModel.h; sourceTree = "<group>"; };
+		15CB1A162BDA4456007E6627 /* MCMovieModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMovieModel.m; sourceTree = "<group>"; };
 		15CB1A192BDA4486007E6627 /* TheMovieCore-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieCore-debug.xcconfig"; sourceTree = "<group>"; };
 		15CB1A1A2BDA4486007E6627 /* TheMovieCore-release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TheMovieCore-release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +112,8 @@
 		15CB1A172BDA4456007E6627 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				15CB1A152BDA4456007E6627 /* TMMovieModel.h */,
-				15CB1A162BDA4456007E6627 /* TMMovieModel.m */,
+				15CB1A152BDA4456007E6627 /* MCMovieModel.h */,
+				15CB1A162BDA4456007E6627 /* MCMovieModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CB19FF2BDA441B007E6627 /* TheMovieCore.h in Headers */,
-				15CB1A1D2BDA45F3007E6627 /* TMMovieModel.h in Headers */,
+				15CB1A1D2BDA45F3007E6627 /* MCMovieModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15CB19F32BDA441B007E6627 /* TheMovieCore.docc in Sources */,
-				15CB1A1E2BDA45F8007E6627 /* TMMovieModel.m in Sources */,
+				15CB1A1E2BDA45F8007E6627 /* MCMovieModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+        
     __weak typeof(self) weakSelf = self;
     UIViewController *controller = [TMMovieGalleryModule build:^(id  _Nonnull result, NSError * _Nonnull error) {
         if (error) {

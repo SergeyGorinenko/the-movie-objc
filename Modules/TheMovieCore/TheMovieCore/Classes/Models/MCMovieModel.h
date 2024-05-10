@@ -1,5 +1,5 @@
 //
-//  TMMovieModel.h
+//  MCMovieModel.h
 //  TheMovieAPI
 //
 //  Created by Serhii Horinenko on 25.04.2024.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TMMovieModel : NSObject
+@interface MCMovieModel : NSObject
 
 @property (nonatomic, readonly) CGFloat popularity;
 @property (nonatomic, readonly) CGFloat voteAverage;

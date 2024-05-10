@@ -15,6 +15,5 @@ FOUNDATION_EXPORT const unsigned char TheMovieAPIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TheMovieAPI/PublicHeader.h>
 
-#import <TheMovieAPI/TMGetConfigurationAPI.h>
-#import <TheMovieAPI/TMGetTopRatedMoviesAPI.h>
+#import <TheMovieAPI/MANetworkManager.h>
 #import <TheMovieAPI/NSError+TheMovieAPI.h>

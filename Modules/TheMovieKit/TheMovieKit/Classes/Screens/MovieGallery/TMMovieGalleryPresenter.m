@@ -12,7 +12,7 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
 
 @interface TMMovieGalleryPresenter ()
 
-@property (nonatomic) NSArray <TMMovieModel *>* movies;
+@property (nonatomic) NSArray <MCMovieModel *>* movies;
 
 @end
 
@@ -85,13 +85,15 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
 }
 
 - (void)configure:(UICollectionViewCell<TMMovieGalleryCellProtocol> *)cell indexPath:(nonnull NSIndexPath *)indexPath {
-    NSArray <TMMovieModel *>* movies = self.movies;
+    NSArray <MCMovieModel *>* movies = self.movies;
     if (indexPath.row < movies.count) {
-        TMMovieModel *movie = self.movies[indexPath.row];
+        MCMovieModel *movie = self.movies[indexPath.row];
         [cell setTitle:movie.title];
         [cell setRelease:[TMMovieGalleryPresenter.dateFormatter stringFromDate:movie.releaseDate]];
         [cell setRating:[NSString stringWithFormat:@"%0.1f", movie.voteAverage]];
-        [cell setRemotePath:movie.posterPath];
+        if (movie.posterPath != nil) {
+            [cell setRemotePath:movie.posterPath];
+        }
     }
 }
 

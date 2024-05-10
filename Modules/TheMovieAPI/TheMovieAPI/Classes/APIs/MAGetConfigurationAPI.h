@@ -1,5 +1,5 @@
 //
-//  TMGetConfigurationAPI.h
+//  MAGetConfigurationAPI.h
 //  TheMovieAPI
 //
 //  Created by Serhii Horinenko on 24.04.2024.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TMGetConfigurationAPI : NSObject
+@interface MAGetConfigurationAPI : NSObject
 
 - (void)getConfiguration:(void (^)(NSDictionary *configurationRep, NSError *error))completion;
 

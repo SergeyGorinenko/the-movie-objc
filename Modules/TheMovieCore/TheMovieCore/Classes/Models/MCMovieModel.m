@@ -1,16 +1,16 @@
 //
-//  TMMovieModel.m
+//  MCMovieModel.m
 //  TheMovieAPI
 //
 //  Created by Serhii Horinenko on 25.04.2024.
 //
 
-#import "TMMovieModel.h"
+#import "MCMovieModel.h"
 
-static NSDateFormatter *kTMMovieModelIso8601CombinedFormatter_ = nil;
+static NSDateFormatter *kMCMovieModelIso8601CombinedFormatter_ = nil;
 
 
-@interface TMMovieModel ()
+@interface MCMovieModel ()
 
 @property (nonatomic) CGFloat popularity;
 @property (nonatomic) CGFloat voteAverage;
@@ -29,20 +29,20 @@ static NSDateFormatter *kTMMovieModelIso8601CombinedFormatter_ = nil;
 @end
 
 
-@implementation TMMovieModel
+@implementation MCMovieModel
 
 + (NSDateFormatter *)iso8601CombinedFormatter {
-    if (nil == kTMMovieModelIso8601CombinedFormatter_) {
+    if (nil == kMCMovieModelIso8601CombinedFormatter_) {
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-        kTMMovieModelIso8601CombinedFormatter_ = dateFormatter;
+        kMCMovieModelIso8601CombinedFormatter_ = dateFormatter;
     }
-    return kTMMovieModelIso8601CombinedFormatter_;
+    return kMCMovieModelIso8601CombinedFormatter_;
 }
 
 + (instancetype)modelWithDictionary:(NSDictionary *)representation {
-    return [[TMMovieModel alloc] initWithDictionary:representation];
+    return [[MCMovieModel alloc] initWithDictionary:representation];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)representation {
@@ -66,7 +66,7 @@ static NSDateFormatter *kTMMovieModelIso8601CombinedFormatter_ = nil;
 
         object = [representation valueForKey:@"release_date"];
         if ([object isKindOfClass:NSString.class]) {
-            self.releaseDate = [TMMovieModel.iso8601CombinedFormatter dateFromString:object];
+            self.releaseDate = [MCMovieModel.iso8601CombinedFormatter dateFromString:object];
         }
 
         object = [representation valueForKey:@"backdrop_path"];

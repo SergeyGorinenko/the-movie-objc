@@ -10,6 +10,7 @@
 #import "TMMovieGalleryRouter.h"
 #import "TMMovieGalleryPresenter.h"
 #import "TMMovieGalleryViewController.h"
+#import "MANetworkManager+TheMovieKit.h"
 
 @implementation TMMovieGalleryModule
 
@@ -18,7 +19,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TheMovieKit" bundle:bundle];
     TMMovieGalleryViewController *view = [storyboard instantiateViewControllerWithIdentifier:@"movieGalleryStoryboardIdentifier"];
     
-    TMMovieGalleryInteractor *interactor = TMMovieGalleryInteractor.new;
+    TMMovieGalleryInteractor *interactor = [[TMMovieGalleryInteractor alloc] init:MANetworkManager.new];
     TMMovieGalleryPresenter *presenter = TMMovieGalleryPresenter.new;
     TMMovieGalleryRouter *router = TMMovieGalleryRouter.new;
 
