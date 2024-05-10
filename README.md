@@ -1,6 +1,6 @@
 # TheMovieObjC
 
-This project is an example of a client-server application in Objective-C.
+### This project is an example of a client-server application in Objective-C.
 
 Implementation features it demonstrates:
 1. Classes for different purposes are divided into corresponding frameworks;
