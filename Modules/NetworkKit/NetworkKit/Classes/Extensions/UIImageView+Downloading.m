@@ -7,8 +7,13 @@
 
 #import "UIImageView+Downloading.h"
 
+/** Table of the image downloading tasks. */
 static NSMapTable *sUIImageViewDownloadingTasks_;
+
+/** The queue for image downloading tasks. */
 static dispatch_queue_t sUIImageDownloadingTasksQueue_;
+
+/** A tag that marks an activity indicator view among subviews of the image view. */
 const NSInteger kUIImageViewActivityViewTag = 82934;
 
 
@@ -16,6 +21,7 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
 
 // MARK: - Private properties
 
+/** Creates a table of the image downloading tasks. */
 + (NSMapTable *)downloadTasks {
     if (nil == sUIImageViewDownloadingTasks_) {
         sUIImageViewDownloadingTasks_ = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsWeakMemory valueOptions:NSPointerFunctionsWeakMemory];
@@ -23,6 +29,7 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
     return sUIImageViewDownloadingTasks_;
 }
 
+/** Creates a queue for image downloading tasks. */
 + (dispatch_queue_t)downloadingTasksQueue {
     if (nil == sUIImageDownloadingTasksQueue_) {
         sUIImageDownloadingTasksQueue_ = dispatch_queue_create( "com.uiimageview.downloading.tasks", DISPATCH_QUEUE_SERIAL);
@@ -72,6 +79,12 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
 
 // MARK: - Private methods
 
+/**
+ Local path for the remote resource.
+ 
+ @param remotePath remote url path.
+ @return Local cache path.
+ */
 - (NSString *)cachePath:(NSString *)remotePath {
     NSString *resultPath = nil;
     NSFileManager *fileManager = NSFileManager.defaultManager;
@@ -85,6 +98,7 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
     return resultPath;
 }
 
+/** Display activity indicator view. */
 - (void)showActivityIndicator {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -99,6 +113,7 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
     });
 }
 
+/** Hide activity indicator view. */
 - (void)hideActivityIndicator {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -107,6 +122,11 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
     });
 }
 
+/**
+ Sets image value.
+ 
+ @param ciImage core image
+ */
 - (void)setCIImage:(CIImage *)ciImage {
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -114,14 +134,21 @@ const NSInteger kUIImageViewActivityViewTag = 82934;
     });
 }
 
+/**
+ Adds a downloading task to the table.
+ 
+ @param task downloading task to add.
+ */
 - (void)addDownloadingTask:(NSURLSessionDownloadTask *)task {
     [UIImageView.downloadTasks setObject:task forKey:self];
 }
 
+/** Remove downloading task for the image view. */
 - (void)removeDownloadingTask {
     [UIImageView.downloadTasks removeObjectForKey:self];
 }
 
+/** Cancel downloading task for the image view. */
 - (void)cancelDownloadingTask {
     [[UIImageView.downloadTasks objectForKey:self] cancel];
     [self removeDownloadingTask];

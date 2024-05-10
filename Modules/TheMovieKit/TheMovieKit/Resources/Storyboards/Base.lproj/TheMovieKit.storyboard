@@ -141,14 +141,6 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xc-Dd-dP9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="293" height="521"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title=" "/>
-                                                    <connections>
-                                                        <action selector="clickButtonAction:" destination="U1u-uI-25d" eventType="touchUpInside" id="ZXv-av-624"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -160,20 +152,16 @@
                                                 <constraint firstAttribute="trailing" secondItem="TUN-Is-IHe" secondAttribute="trailing" id="FWD-dK-qhc"/>
                                                 <constraint firstItem="941-O1-93V" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" id="Fkd-sE-hch"/>
                                                 <constraint firstItem="TUN-Is-IHe" firstAttribute="height" secondItem="JGj-ZD-qPh" secondAttribute="height" multiplier="2:8" id="Fwp-eN-6oi"/>
-                                                <constraint firstItem="8xc-Dd-dP9" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" id="G0y-ij-mDI"/>
                                                 <constraint firstItem="hig-ss-TwW" firstAttribute="top" secondItem="eUf-XM-sqw" secondAttribute="bottom" constant="4" id="HZM-yA-udt"/>
                                                 <constraint firstItem="eUf-XM-sqw" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" constant="12" id="Ioy-jw-tE3"/>
                                                 <constraint firstItem="6cK-mZ-VKe" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" id="KRV-BC-HBl"/>
                                                 <constraint firstAttribute="trailing" secondItem="6cK-mZ-VKe" secondAttribute="trailing" id="OAb-U2-JVw"/>
                                                 <constraint firstAttribute="bottom" secondItem="TUN-Is-IHe" secondAttribute="bottom" id="VTt-54-yRF"/>
-                                                <constraint firstAttribute="bottom" secondItem="8xc-Dd-dP9" secondAttribute="bottom" id="WCY-5G-oov"/>
                                                 <constraint firstAttribute="bottom" secondItem="6cK-mZ-VKe" secondAttribute="bottom" id="aZV-QE-VaB"/>
                                                 <constraint firstItem="941-O1-93V" firstAttribute="centerY" secondItem="eUf-XM-sqw" secondAttribute="centerY" id="as6-Hj-UJw"/>
                                                 <constraint firstItem="TUN-Is-IHe" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" id="bhc-aw-XVd"/>
                                                 <constraint firstItem="hig-ss-TwW" firstAttribute="leading" secondItem="JGj-ZD-qPh" secondAttribute="leading" constant="12" id="klE-3O-hFf"/>
                                                 <constraint firstItem="TUN-Is-IHe" firstAttribute="height" secondItem="eUf-XM-sqw" secondAttribute="height" multiplier="4:2" id="ogm-aN-u9N"/>
-                                                <constraint firstItem="8xc-Dd-dP9" firstAttribute="top" secondItem="JGj-ZD-qPh" secondAttribute="top" id="qhJ-tR-UZ7"/>
-                                                <constraint firstAttribute="trailing" secondItem="8xc-Dd-dP9" secondAttribute="trailing" id="z70-rq-Vbn"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

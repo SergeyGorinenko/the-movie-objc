@@ -10,6 +10,7 @@
 
 @implementation MAGetConfigurationAPI
 
+/** Returns URL to get movie's configuration data. */
 - (NSURL *)apiURL {
     NSString *urlString = [NSString stringWithFormat:@"%@/configuration?api_key=%@", API_ENDPOINT, THEMOVIEDB_API_KEY];
     return [NSURL URLWithString:urlString];

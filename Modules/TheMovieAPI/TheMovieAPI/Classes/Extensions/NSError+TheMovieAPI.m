@@ -7,6 +7,7 @@
 
 #import "NSError+TheMovieAPI.h"
 
+/** The Movie platform errors' domain name. */
 NSString *const TMServerErrorDomain = @"org.themoviedb.api.error.network";
 
 @implementation NSError (TheMovieAPI)

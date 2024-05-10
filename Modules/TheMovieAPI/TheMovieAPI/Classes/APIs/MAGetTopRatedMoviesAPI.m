@@ -10,6 +10,7 @@
 
 @implementation MAGetTopRatedMoviesAPI
 
+/** Returns URL to get movie's for a specified page number. */
 - (NSURL *)apiURL:(NSInteger)page {
     NSString *urlString = [NSString stringWithFormat:@"%@/movie/top_rated?api_key=%@&page=%@", API_ENDPOINT, THEMOVIEDB_API_KEY, @(page)];
     return [NSURL URLWithString:urlString];

@@ -24,12 +24,10 @@
     return @"movieGalleryCellIdentifier";
 }
 
+/** Called by the collection view before the instance is returned from the reuse queue. Cancels previously started image loading. */
 - (void)prepareForReuse {
     [super prepareForReuse];
     [self.imageView cancelDownloading];
-}
-
-- (IBAction)clickButtonAction:(id)sender {
 }
 
 @end

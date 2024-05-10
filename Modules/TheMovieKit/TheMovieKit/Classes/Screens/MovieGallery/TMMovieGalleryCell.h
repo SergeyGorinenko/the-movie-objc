@@ -12,11 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TMMovieGalleryCell : UICollectionViewCell
 
+/** Defines the default cell identifier. */
 + (NSString *)defaultIdentifier;
 
 @end
 
 
+/** TMMovieGalleryCell extention to confirm TMMovieGalleryCellProtocol protocol */
 @interface TMMovieGalleryCell (TMMovieGalleryCellProtocol) <TMMovieGalleryCellProtocol>
 @end
 

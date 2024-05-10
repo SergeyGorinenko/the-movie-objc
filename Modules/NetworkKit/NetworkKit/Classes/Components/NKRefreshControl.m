@@ -11,7 +11,10 @@
 
 @interface NKRefreshControl ()
 
+/** Reference to an activity indicator view. */
 @property (nonatomic) UIActivityIndicatorView *activityView;
+
+/** Reference to a refresh control height constraint. */
 @property (nonatomic) NSLayoutConstraint *heightConstraint;
 
 @end
@@ -28,22 +31,17 @@
     return self;
 }
 
+/** Returns tint color for the refresh control. */
 - (UIColor *)tintColor {
     return self.activityView.color;
 }
 
+/** Sets tint color for the refresh control. */
 - (void)setTintColor:(UIColor *)color {
     self.activityView.color = color;
 }
 
-- (void)setHeight:(CGFloat)height {
-    if (height >= 0) {
-        self.heightConstraint.constant = height;
-    } else {
-        self.heightConstraint.constant = 0;
-    }
-}
-
+/** Creates activity indicator view and placed it into refresh control. */
 - (void)setupActivityView:(UIActivityIndicatorViewStyle)style {
     UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:style];
     activityView.hidesWhenStopped = NO;
@@ -76,6 +74,14 @@
                                       constant:0.0],
     ]];
     self.activityView = activityView;
+}
+
+- (void)setHeight:(CGFloat)height {
+    if (height >= 0) {
+        self.heightConstraint.constant = height;
+    } else {
+        self.heightConstraint.constant = 0;
+    }
 }
 
 - (void)beginRefreshing {

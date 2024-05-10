@@ -13,6 +13,12 @@ extern NSString *const TMServerErrorDomain;
 
 @interface NSError (TheMovieAPI)
 
+/**
+ An instance initialization function that takes data from the dictionary passed as a parameter.
+ 
+ @param errorRep Dictionary that contains values for properties.
+ @return An instance of the NSError class.
+ */
 + (instancetype)errorWithDictionary:(NSDictionary *)errorRep;
 
 @end

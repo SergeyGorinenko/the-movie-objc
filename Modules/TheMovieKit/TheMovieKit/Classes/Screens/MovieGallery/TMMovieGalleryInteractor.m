@@ -12,8 +12,13 @@
 
 @interface TMMovieGalleryInteractor ()
 
+/** A data provider that is used to get movie items for the movie gallery.  */
 @property (nonatomic) id<TMMovieDataProvider> dataProvider;
+
+/** Model that keeps data configuration information.  */
 @property (nonatomic) TMMovieConfiguration *configuration;
+
+/** Model responsible for tracking pagination related data.  */
 @property (nonatomic) TMMoviePagination *pagination;
 
 @end
@@ -29,6 +34,12 @@
     return self;
 }
 
+/**
+ This function loads a list of movies for a specific page.
+ 
+ @param page number of the page for which this method requests a list of movies from the server.
+ @param completion A closure that is called when a list of movies is retrieved or an error occurs.
+ */
 - (void)getTopRatedMovies:(NSInteger)page completion:(void (^)(NSArray <MCMovieModel *>*movies, NSError *error))completion {
     
     __weak typeof(self) weakSelf = self;

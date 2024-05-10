@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TMMovieGalleryLayout : UICollectionViewLayout
 
+/** Creates an instance of the layout. */
 + (UICollectionViewLayout *)layout;
 
 @end

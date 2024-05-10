@@ -7,11 +7,13 @@
 
 #import "TMMovieGalleryPresenter.h"
 
+/** A date formatter used to convert a movie's release date into a string for display in a cell. */
 static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
 
 
 @interface TMMovieGalleryPresenter ()
 
+/** An array of movies displayed by View */
 @property (nonatomic) NSArray <MCMovieModel *>* movies;
 
 @end
@@ -19,6 +21,7 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
 
 @implementation TMMovieGalleryPresenter
 
+/** Returns date formatter used to convert a movie's release date into a string for display in a cell. */
 + (NSDateFormatter *)dateFormatter {
     if (nil == kTMMovieGalleryPresenterDateFormatter_) {
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
@@ -29,10 +32,12 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
     return kTMMovieGalleryPresenterDateFormatter_;
 }
 
+/** This method causes the View component to update the data displayed in it. */
 - (void)reloadView {
     [self.view reloadData];
 }
 
+/** Refreshes data loaded from the server. */
 - (void)loadFirstPage {
     self.movies = nil;
     __weak typeof(self) weakSelf = self;
@@ -49,6 +54,7 @@ static NSDateFormatter *kTMMovieGalleryPresenterDateFormatter_ = nil;
     }];
 }
 
+/** Loads another page of movies. */
 - (void)loadNextPage {
     __weak typeof(self) weakSelf = self;
     [self.interactor loadNextPage:^(NSArray * _Nonnull movies, NSError * _Nonnull error) {

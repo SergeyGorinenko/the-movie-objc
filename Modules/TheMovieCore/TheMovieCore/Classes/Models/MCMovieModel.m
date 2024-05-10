@@ -7,6 +7,7 @@
 
 #import "MCMovieModel.h"
 
+/** A date formatter used to convert a movie's release date from string into a date. */
 static NSDateFormatter *kMCMovieModelIso8601CombinedFormatter_ = nil;
 
 
@@ -31,6 +32,7 @@ static NSDateFormatter *kMCMovieModelIso8601CombinedFormatter_ = nil;
 
 @implementation MCMovieModel
 
+/** Returns date formatter used to convert a movie's release date from string into a date. */
 + (NSDateFormatter *)iso8601CombinedFormatter {
     if (nil == kMCMovieModelIso8601CombinedFormatter_) {
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
@@ -45,6 +47,12 @@ static NSDateFormatter *kMCMovieModelIso8601CombinedFormatter_ = nil;
     return [[MCMovieModel alloc] initWithDictionary:representation];
 }
 
+/**
+ An instance initialization function that takes data from the dictionary passed as a parameter.
+ 
+ @param representation Dictionary that contains init values for properties.
+ @return An instance of the class.
+ */
 - (instancetype)initWithDictionary:(NSDictionary *)representation {
     if (nil != (self = [super init])) {
         [self updateWithDictionary:representation];
@@ -52,6 +60,11 @@ static NSDateFormatter *kMCMovieModelIso8601CombinedFormatter_ = nil;
     return self;
 }
 
+/**
+ Parsing method that sets instance properties to appropriate values.
+ 
+ @param representation Dictionary that contains init values for properties.
+ */
 - (void)updateWithDictionary:(NSDictionary *)representation {
     if ([representation isKindOfClass:NSDictionary.class]) {
         id object = [representation valueForKey:@"popularity"];

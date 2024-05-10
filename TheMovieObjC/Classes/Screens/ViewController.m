@@ -22,7 +22,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-        
+    
+    // Create movie gallery module
     __weak typeof(self) weakSelf = self;
     UIViewController *controller = [TMMovieGalleryModule build:^(id  _Nonnull result, NSError * _Nonnull error) {
         if (error) {
@@ -33,7 +34,8 @@
     }];
     [controller setModalPresentationStyle:UIModalPresentationFullScreen];
     
-    [self presentViewController:controller animated:YES completion:^{
+    // Present view controller of movie gallery module
+    [self presentViewController:controller animated:NO completion:^{
         NSLog(@"viewDidAppear: presentViewController:animated:completion:");
     }];
 }

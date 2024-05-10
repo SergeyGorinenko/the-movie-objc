@@ -12,11 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TMMovieGalleryViewController : UIViewController
 
+/** View keeps strong reference to Presenter component of VIPER module */
 @property (nonatomic) id<TMMovieGalleryViewDelegate> presenter;
 
 @end
 
 
+/** TMMovieGalleryViewController extention to confirm TMMovieGalleryViewProtocol protocol */
 @interface TMMovieGalleryViewController (TMMovieGalleryViewProtocol) <TMMovieGalleryViewProtocol>
 @end
 
