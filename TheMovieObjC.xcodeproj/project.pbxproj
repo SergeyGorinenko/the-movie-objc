@@ -135,6 +135,7 @@
 		155705B22BDA157F00879205 /* TheMovieObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		155705B62BDA157F00879205 /* TheMovieObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieObjCUITests.m; sourceTree = "<group>"; };
 		155705B82BDA157F00879205 /* TheMovieObjCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheMovieObjCUITestsLaunchTests.m; sourceTree = "<group>"; };
+		155C5AAC2BEEC81C00F80ECC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		15CB19B12BDA1873007E6627 /* TheMovieAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheMovieAPI.xcodeproj; path = TheMovieAPI/TheMovieAPI.xcodeproj; sourceTree = "<group>"; };
 		15CB19CA2BDA30F5007E6627 /* Global.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
 		15CB19CB2BDA30F5007E6627 /* Global-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Global-debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +177,7 @@
 		155705842BDA157D00879205 = {
 			isa = PBXGroup;
 			children = (
+				155C5AAC2BEEC81C00F80ECC /* README.md */,
 				15CB19C92BDA30F5007E6627 /* Configuration */,
 				1557058F2BDA157D00879205 /* TheMovieObjC */,
 				15CB19842BDA17EF007E6627 /* Modules */,

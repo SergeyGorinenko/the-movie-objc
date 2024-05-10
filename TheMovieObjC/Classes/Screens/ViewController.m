@@ -28,16 +28,12 @@
     UIViewController *controller = [TMMovieGalleryModule build:^(id  _Nonnull result, NSError * _Nonnull error) {
         if (error) {
             [weakSelf presentError:error];
-        } else {
-            NSLog(@"viewDidAppear: %@", result);
         }
     }];
     [controller setModalPresentationStyle:UIModalPresentationFullScreen];
     
     // Present view controller of movie gallery module
-    [self presentViewController:controller animated:NO completion:^{
-        NSLog(@"viewDidAppear: presentViewController:animated:completion:");
-    }];
+    [self presentViewController:controller animated:NO completion:nil];
 }
 
 - (void)presentError:(NSError *)error {
